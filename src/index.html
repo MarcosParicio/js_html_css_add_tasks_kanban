@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas - Kanban</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tareas - Kanban</h1>
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Agregar tarea">
+      <button type="submit">Agregar</button>
+    </form>
+    <div class="kanban-board">
+      <div class="kanban-column" id="pendiente">
+        <h2>Pendiente</h2>
+        <ul id="pendiente-list" class="task-list"></ul>
+      </div>
+      <div class="kanban-column" id="en-curso">
+        <h2>En Curso</h2>
+        <ul id="en-curso-list" class="task-list"></ul>
+      </div>
+      <div class="kanban-column" id="completada">
+        <h2>Completada</h2>
+        <ul id="completada-list" class="task-list"></ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
